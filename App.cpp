@@ -3,9 +3,9 @@
 
 using namespace std;
 
-void mostrarMenu(){
+void menu(){
+    int eleccion;
 
-    int opcion;
     do {
         cout << "Menu de opciones:" << endl;
         cout << "1) Crear evento" << endl;
@@ -16,6 +16,16 @@ void mostrarMenu(){
         cout << "6) Salir" << endl;
         cout << "\nIngrese la opcion > ";
         
-        cin >> opcion;
-    }while (opcion != 6);
+        cin >> eleccion;
+    }while (eleccion != 6);
+}
+
+
+int main (){
+
+    menu();
+
+    
+    return 0;
+
 }
