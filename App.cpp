@@ -1,31 +1,51 @@
 #include <iostream>
-#include <fstream>
+
 
 using namespace std;
 
-void menu(){
-    int eleccion;
+void mostrarMenu(){
 
+    int opcion;
     do {
-        cout << "Menu de opciones:" << endl;
+        cout << "\nMenu de opciones:" << endl;
         cout << "1) Crear evento" << endl;
-        cout << "2) Registrar nueva persona" << endl;
-        cout << "3) Registrar asistente" << endl;
-        cout << "4) Lista de asistentes" << endl;
-        cout << "5) Generar informe" << endl;
-        cout << "6) Salir" << endl;
+        cout << "2) Registrar asistente" << endl;
+        cout << "3) Lista de asistentes" << endl;
+        cout << "4) Generar informe" << endl;
+        cout << "5) Salir" << endl;
         cout << "\nIngrese la opcion > ";
         
-        cin >> eleccion;
-    }while (eleccion != 6);
-}
+        cin >> opcion;
 
+        switch(opcion) {
+            case 1: 
+                break;
+                
+            case 2: 
+                break;
+                
+            case 3:
+                
+                break;
+                
+            case 4:
+                cout << "Generando informe, esto puede llevar un tiempo..." << endl;
+                break;
+                
+            case 5:
+                cout << "Saliendo del programa..." << endl;
+                break;
+                
+            default:
+                cout << "Opcion invalida. Intente de nuevo." << endl;
+        }
+    } while (opcion != 5);
+}
 
 int main (){
 
-    menu();
 
-    
+    mostrarMenu();
     return 0;
 
 }
